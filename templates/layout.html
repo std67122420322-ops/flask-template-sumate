@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flask-template - {% block title %}{% endblock %}</title>
+</head>
+<body>
+  <!-- <a href="Hoom">Home</a> 
+  <a href="about">About</a>
+  <a href="food">Food</a>
+  <a href="sport">Sport</a> < -->
+  <a href="{{ url_for('index') }}">Home</a> 
+  <a href="{{ url_for('about') }}">About</a>
+  <a href="{{ url_for('food') }}">Food</a>
+  <a href="{{ url_for('sport') }}">Sport</a>
+  <h1>{{ title }}</h1>
+  <hr>
+
+  {% block content %}{% endblock %}
+
+</body>
+</html>

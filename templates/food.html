@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+  <h1>{{ title }}</h1>
+  <h2>รายการอาหารที่ชอบ:</h2>
+  <Ol>
+    <li>{{ Foods[0] }}</li>
+    <li>{{ Foods[1] }}</li>  
+    <li>{{ Foods[2] }}</li>
+    <li>{{ Foods[3] }}</li>
+  <Ol>
+  <h2>รายการอาหารที่ชอบ:</h2>
+  <Ol>
+    {% for food in Foods %}
+    <li>{{ food }}</li>
+    {% endfor %}
+  <Ol>
+  <hr>
+  
+{% endblock %}
