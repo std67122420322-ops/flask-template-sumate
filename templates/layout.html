@@ -9,14 +9,14 @@
   <!-- <a href="Hoom">Home</a> 
   <a href="about">About</a>
   <a href="food">Food</a>
-  <a href="sport">Sport</a> < -->
+  <a href="sport">Sport</a> 
+  <a href="movie">Movie</a>
+  -->
   <a href="{{ url_for('index') }}">Home</a> 
   <a href="{{ url_for('about') }}">About</a>
   <a href="{{ url_for('food') }}">Food</a>
   <a href="{{ url_for('sport') }}">Sport</a>
-  <h1>{{ title }}</h1>
-  <hr>
-
+  <a href="{{ url_for('movie') }}">Movie</a>
   {% block content %}{% endblock %}
 
 </body>
